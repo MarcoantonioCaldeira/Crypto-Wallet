@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= data_br(Date.today) %>
+
 <h1><%= Coin.model_name.human(count: @coins.count) %></h1>
 <table class="table table-hover">
   <thead>
