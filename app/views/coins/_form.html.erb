@@ -24,10 +24,10 @@
   <div>
     <%= form.label :url_image, style: "display: block" %>
     <%= form.text_field :url_image %>
-    <td> <%= image_tag coin.url_image, size: "25x25" %> </td>
+    <td> <%#= image_tag @coin.url_image, size: "25x25" %> </td>
   </div>
 
-  <div>
+  <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
