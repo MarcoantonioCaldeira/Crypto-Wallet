@@ -31,3 +31,8 @@
 
 en:
   hello: "Hello world"
+  links:
+    edit: "Editar"
+    show: "Mostar"
+    delete: "Apagar"
+
