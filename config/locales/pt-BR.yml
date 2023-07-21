@@ -1,2 +1,7 @@
 pt-BR:
-  abc: "Ola Mundo!"
+  actual_locale: "Português Brasil"
+  hello: "Ola Mundo!"
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"
