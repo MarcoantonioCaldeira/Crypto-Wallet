@@ -6,20 +6,16 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-    <style>
-      *{
-          font-family: Arial;
-          text-decoration: none;
-          color: black;
-          font-size: 20px;
-      }
-    </style>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <h1>CABEÇALHO</h1>
+    <h1>CABEÇALHO - <%= params[:controller] %></h1>
     <!--Pagina que vai ser renderizada-->
     <%= yield %>
     <h1>RODAPE</h1>
